@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym & Memberships</title>
+    <link rel="stylesheet" href="resources/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="memberships.html">Memberships</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="Home">
+        <section>
+            <h1>Welcome to ALH Gym</h1>
+            <P>Get fit and healthy with our tailored membership plans!</P>
+        </section>
+        <section>
+            <h2>Memberships</h2>
+            <p>Choose the plan that works best for you.</p>
+            <button id="signup-btn">Sign Up Now</button>
+        </section>
+        <section>
+            <h2>About Us</h2>
+            <p>Learn more about our trainers and our philosophy!</p>
+        </section>
+        <section>
+            <h2>Contact Us</h2>
+            <p>Get in touch with us for any inquiries</p>
+        </section>
+        <!-- Add More sections as needed -->
+    </main>
+
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Sign Up for Memberships</h2>
+            
+            <form id="signup-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 AHL Gym</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>

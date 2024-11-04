@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym & Memberships</title>
+    <link rel="stylesheet" href="resources/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="memberships.html">Memberships</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main> 
+        <section id="memberships">
+            <h1>Choose your membership plan</h1>
+            <!-- membership options-->
+            <div class="membership-plan">
+                <h2>Basic Plan</h2>
+                <p>Price: £20 per month</p>
+                <button onclick="selectPlan('Basic', 20)">Select Basic Plan</button>
+            </div>
+
+            <div class="membership-plan">
+                <h2>Premium Plan</h2>
+                <p>Price: £40 per month</p>
+                <button onclick="selectPlan('Premium', 40)">Select Premium Plan</button>
+            </div>
+
+            <div clas="membership-plan">
+                <h2>VIP Plan</h2>
+                <p>Price: £60 per month</p>
+                <button onclick="selectPlan('VIP', 60)">Select VIP Plan</button>
+            </div>
+
+            <!--Form to calculate the total cost-->
+
+            <div id="plan-details" style="display:none;">
+                <h2 id="selected-plan-title"></h2>
+                <p>Enter the number of months:</p>
+                <input type="number" id="duration" placeholder="Months" min="1">
+                <button id="calculate-btn">Calculate Total Cost</button>
+
+                <p id="total-cost"></p>
+            </div>
+         </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AHL Gym</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>

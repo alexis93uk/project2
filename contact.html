@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - AHL Gym</title>
+    <link rel="stylesheet" href="resources/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="memberships.html">Memberships</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main> 
+        <section>
+            <h2>Contact Us</h2>
+            <p>Have questions? Reach out to us using the form below</p>
+        <!-- Add More sections as needed -->
+
+        <form id="contact-form" action="submit_form.php" method="POST">
+            <!--Name Field-->
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <!--Email Field-->
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+
+            <!--Subject Field-->
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AHL Gym</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
