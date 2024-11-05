@@ -12,12 +12,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     //display the selected plan details
 
-    document.getElementById("plan-details").style.display = "block";
+        document.getElementById("plan-details").style.display = "block";
+        document.getElementById("selected-plan-title").textContent = `${planName} Plan - £${price} per month`;
 
-    //update selected plan title
-
-    document.getElementById("selected-plan-title").textContent = 
-    `${planName} Plan - £${price} per month`;
+    };
 
     document.getElementById("calculate-btn").addEventListener("click", function() {
         const duration = parseInt(document.getElementById("duration").value);
@@ -28,43 +26,44 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     
         const totalCost = selectedPrice * duration;
-    
-        document.getElementById('total-cost').textContent = 
-        "Total Cost for ${duration} months: £${totalCost}";
-        });
-};
+        document.getElementById("total-cost").textContent = 
+        `Total Cost for ${duration} months: £${totalCost}`;
+    });
 
-document.getElementById("signup-btn").onclick = function(){
-    document.getElementById("signup-modal").style.display = "block";
-};
+    document.getElementById("signup-btn").onclick = function(){
+        document.getElementById("signup-modal").style.display = "block";
+    };
 
-document.querySelector(".close").onclick = function() {
-    document.getElementById("signup-modal").style.display = "none";
-};
-
-window.onclick = function(event) {
-    if (event.target === document.getElementById("signup-modal")) {
+    document.querySelector(".close").onclick = function() {
         document.getElementById("signup-modal").style.display = "none";
+    };
+
+    window.onclick = function(event) {
+        if (event.target === document.getElementById("signup-modal")) {
+        document.getElementById("signup-modal").style.display = "none";
+        }
+    };
+
+
+    document.getElementById("signup-form").onsubmit = function(event) {
+        event.preventDefault();
+        
+        const email = document.getElementById("email").value;
+        const name = document.getElementById("name").value;
+
+        if (validateEmail(email)) {
+            alert(`Thanks, ${name}, for signing up!`);
+            document.getElementById("signup-modal").style.display = "none";
+            document.getElementById("signup-form").reset();
+        } else {
+            alert("Please enter a valid email.");
+        }
+    };
+
+    function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(String(email).toLowerCase());
     }
-};
-
-
-document.getElementById("signup-form").onsubmit = function(event) {
-    event.preventDefault();
-    let email = document.getElementById("email").value;
-    let name = document.getElementById("name").value;
-
-    if (validateEmail(email)) {
-        alert("Thanks, ${name}, for signing up!");
-        document.getElementById ("signup-modal").style.display = "none";
-    } else {
-        alert("Please enter a valid email.");
-    }
-};
-
-function validateEmail(email) {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(String(email).toLowerCase());
-}
+});
 
 });
