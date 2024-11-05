@@ -65,5 +65,3 @@ document.addEventListener("DOMContentLoaded", function() {
         return re.test(String(email).toLowerCase());
     }
 });
-
-});
