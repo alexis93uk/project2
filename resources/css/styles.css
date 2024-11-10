@@ -104,8 +104,8 @@ body {
 }
 
 .section-img {
-    width: 50%;
-    max-width: 250px; /* Adjust as needed */
+    width: 100%;
+    max-width: 500px; /* Adjust as needed */
     height: auto;
     margin-top: 15px;
     border-radius: 8px;
