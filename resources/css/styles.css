@@ -88,6 +88,26 @@ body {
     box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
 }
 
+.membership-images {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.membership-images img {
+    width: 100px; /* Adjust width as needed */
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.membership-images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
 .caption {
     font-size: 16px;
     color: #555;
