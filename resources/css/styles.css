@@ -37,7 +37,7 @@ html {
 }
 
 
-/*CSS grod for the main section*/
+/*CSS grid for the main section*/
 
 main {
     display: grid;
@@ -205,6 +205,23 @@ button:hover {
     background-color: #ffcc00;
     color: #333;
     transform: scale(1.05);
+}
+
+/* about content styling */
+
+.about-section {
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Plan details section */
