@@ -32,11 +32,6 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-
 /*CSS grid for the main section*/
 
 main {
@@ -65,12 +60,18 @@ section {
 }
 
 /* general styling for the page */
-body {
-    font-family: arial, sans-serif;
+
+body, html {
+    scroll-behavior: smooth;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
     background-color: #86a4b4;
     color: #282626;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 /*styling the image and its container */
