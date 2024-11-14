@@ -181,6 +181,14 @@ body {
     margin-right: 8px;
 }
 
+#membership-background {
+    width: 50%;
+    background-image: url('resources/images/gym.jpg'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Set the height */
+}
+
 /* Button styling */
 button {
     background-color: #333;
