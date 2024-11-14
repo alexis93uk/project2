@@ -95,8 +95,8 @@ body {
 }
 
 .membership-images img {
-    width: 100px; /* Adjust width as needed */
-    height: 100px;
+    width: 80px; /* Adjust width as needed */
+    height: 80px;
     object-fit: cover;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
