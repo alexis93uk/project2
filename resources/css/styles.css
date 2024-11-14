@@ -143,9 +143,42 @@ body {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.membership-plan h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.membership-plan p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
 .membership-plan:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.benefits {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.benefits li {
+    font-size: 1em;
+    color: #444;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.benefits li::before {
+    content: "✓";
+    color: #28a745;
+    font-weight: bold;
+    margin-right: 8px;
 }
 
 /* Button styling */
