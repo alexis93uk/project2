@@ -10,4 +10,54 @@
 - Contact Page: Contact form validated via JavaScript
 - About Us Page: Features gym info, trainer bios, etc.
 
+# Manual Testing for Website
+
+## 1. Functionality Testing
+Navigation:
+Test each link (Home, Memberships, About Us, Contact) to ensure they navigate to the intended sections/pages.
+Check if external links or buttons open the correct pages.
+Forms:
+Validate required fields by submitting without inputs.
+Test form submissions with valid and invalid data.
+Check for user feedback messages after form submission.
+Dynamic Elements:
+Test buttons like "Select Plan" or "Calculate Total Cost" for expected behavior.
+Error Handling:
+Simulate errors like incorrect inputs in forms to confirm proper handling.
+
+## 2. Usability Testing
+### Design:
+Assess the readability and clarity of content.
+Check for consistent fonts, spacing, and alignment.
+Ease of Navigation:
+Confirm intuitive menu placement and navigation flow.
+Test hover effects and active link highlights for user clarity.
+
+## 3. Responsiveness Testing
+### Screen Sizes:
+Test layout and elements on various screen sizes (desktop, tablet, and mobile).
+Check if images, text, and sections adapt correctly.
+### Browser Compatibility:
+Test the website on popular browsers (Chrome, Firefox, Safari, Edge).
+
+# Automated Testing
+
+## 1. Tools
+Lighthouse (Built into Chrome):
+Test performance, accessibility, best practices, SEO, and PWA compliance.
+BrowserStack or Responsinator:
+Test the website’s layout across multiple devices and resolutions.
+Validators:
+HTML Validator (W3C Validator).
+CSS Validator (W3C CSS Validation).
+
+## 2. Key Areas
+### Accessibility:
+Ensure all images have alt tags.
+Check color contrast and text size.
+
+### Performance:
+Analyze load times and optimize heavy assets like images.
+Responsive Design:
+Verify adaptive behavior for different viewports.
   
