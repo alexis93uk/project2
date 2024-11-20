@@ -67,7 +67,10 @@ section {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #bdb1e1;
+    background-image: url('C:/Users/aleks/Desktop/project2/project2-main/project2-main/resources/images/london1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #333;
     margin: 0;
 }
