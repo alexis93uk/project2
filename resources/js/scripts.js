@@ -1,3 +1,35 @@
+document.addEventListener('DOMContentLoaded', () => {
+        // Check if feedback has been shown before
+        if (!localStorage.getItem('feedback-shown')) {
+            const popup = document.getElementById('feedback-popup');
+            popup.style.display = 'flex';
+
+            // Handle form submission
+            document.getElementById('feedback-form').addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                const formData = new FormData(e.target);
+                const frequency = formData.get('frequency');
+
+                // Send the feedback via email
+                fetch('submit_feedback.php', {
+                    method: 'POST',
+                    body: JSON.stringify({ frequency }),
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                })
+                .then(response => response.text())
+                .then(() => {
+                    alert('Thank you for your feedback!');
+                    popup.style.display = 'none';
+                    localStorage.setItem('feedback-shown', true); // Mark as shown
+                })
+                .catch(err => console.error('Error submitting feedback:', err));
+            });
+        }
+    });
+
 //global variable to hold selected plan and price
 
 document.addEventListener("DOMContentLoaded", function() {
