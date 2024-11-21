@@ -97,3 +97,15 @@ document.addEventListener("DOMContentLoaded", function() {
         return re.test(String(email).toLowerCase());
     }
 });
+
+document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent default form submission
+        fetch(this.action, {
+            method: this.method,
+            body: new FormData(this),
+        }).then(() => {
+            window.location.href = "https://alexis93uk.github.io/project2/index.html";
+        }).catch(error => {
+            console.error('Error:', error);
+        });
+});
