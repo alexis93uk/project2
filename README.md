@@ -68,4 +68,11 @@ Analyze load times and optimize heavy assets like images.
 
 #### Responsive Design:
 Verify adaptive behavior for different viewports.
-  
+
+# VALIDATION FOR HTML, CSS & JAVASCRIPT
+
+# HTML
+
+### index.html validator results: 
+
+
