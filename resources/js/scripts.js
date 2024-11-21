@@ -109,28 +109,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     };
 
-
-    document.getElementById("signup-form").onsubmit = function(event) {
-        event.preventDefault();
-        
-        const email = document.getElementById("email").value;
-        const name = document.getElementById("name").value;
-
-        if (validateEmail(email)) {
-            alert(`Thanks, ${name}, for signing up!`);
-            document.getElementById("signup-modal").style.display = "none";
-            document.getElementById("signup-form").reset();
-        } else {
-            alert("Please enter a valid email.");
-        }
-    };
-
-    function validateEmail(email) {
-        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return re.test(String(email).toLowerCase());
-    }
-});
-
 document.getElementById('contact-form').addEventListener('submit', function (event) {
         event.preventDefault(); 
         fetch(this.action, {
