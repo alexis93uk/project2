@@ -75,4 +75,10 @@ Verify adaptive behavior for different viewports.
 
 ### index.html validator results: 
 
+![image](https://github.com/user-attachments/assets/8ba7151c-d1df-477b-adcd-2fdd2fcd1c23)
+
+### memberships.html validator results: 
+
+
+
 
