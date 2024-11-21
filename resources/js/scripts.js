@@ -51,14 +51,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     };
 
-function selectPlanAndScroll(plan, price) {
-    selectPlan(plan, price);
-
-    const planDetails = document.getElementById("plan-details");
-    planDetails.style.display = "block"; // Ensure it's visible before scrolling
-    planDetails.scrollIntoView({ behavior: "smooth", block: "start" });
-}
-
     document.getElementById("calculate-btn").addEventListener("click", function() {
         const duration = parseInt(document.getElementById("duration").value);
     
