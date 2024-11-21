@@ -6,7 +6,7 @@
         flex-direction: column;
     }
 }
-    /* change the color later */
+
 header {
     position: sticky;
     top: 0;
@@ -85,9 +85,9 @@ body {
 }
 
 #about-image {
-    width: 200px; /*control the size of the image*/
+    width: 200px; 
     height: auto;
-    border-radius: 50%; /*makes the image round */
+    border-radius: 50%; 
     border: 3px solid #333;
     box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
 }
@@ -99,7 +99,7 @@ body {
 }
 
 .membership-images img {
-    width: 120px; /* Adjust width as needed */
+    width: 120px; 
     height: 120px;
     object-fit: cover;
     border-radius: 5px;
@@ -146,10 +146,10 @@ body {
 }
 
 #contact-form textarea {
-    resize: vertical; /* Allow resizing vertically only */
+    resize: vertical; 
     max-height: 300px;
     min-height: 100px;
-    overflow-y: auto; /* Add scrollbar when the message exceeds height */
+    overflow-y: auto; 
 }
 
 #contact-form button {
@@ -170,7 +170,7 @@ body {
 
 .section-img {
     width: 100%;
-    max-width: 500px; /* Adjust as needed */
+    max-width: 500px; 
     height: auto;
     margin-top: 15px;
     border-radius: 8px;
