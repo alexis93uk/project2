@@ -47,6 +47,8 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("plan-details").style.display = "block";
         document.getElementById("selected-plan-title").textContent = `${planName} Plan - £${price} per month`;
 
+        planDetails.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
     };
 
 function selectPlanAndScroll(plan, price) {
