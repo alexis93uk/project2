@@ -290,28 +290,56 @@ footer {
     z-index: 1000;
 }
 
+/* Popup overlay */
+.popup-overlay {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    z-index: 999;
+}
+
+/* Popup content */
 .popup-content {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     text-align: center;
-    width: 300px;
+    width: 80%;
+    max-width: 400px;
 }
 
 .popup-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.popup-content p {
+    font-size: 1rem;
     margin-bottom: 20px;
+    color: #555;
 }
 
 .popup-content button {
-    padding: 10px 15px;
-    background-color: #333;
+    background: #333;
     color: white;
     border: none;
-    border-radius: 4px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
     cursor: pointer;
 }
 
 .popup-content button:hover {
     background-color: #555;
+    color: #333;
 }
