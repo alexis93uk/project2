@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     //function to select a plan
 
-    window.selectPlan = function(planName, price) {
+    window.selectPlanAndScroll = function(planName, price) {
         selectedPlan = planName;
         selectedPrice = price;
 
