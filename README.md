@@ -81,7 +81,10 @@ Verify adaptive behavior for different viewports.
 
 ![image](https://github.com/user-attachments/assets/d9bd6ea2-25cb-4800-8505-148bc5d99f4a)
 
-### aboutus.html validator results: 
+### about.html validator results: 
+
+![image](https://github.com/user-attachments/assets/851224d0-0ba7-4f05-9ede-0af232219129)
+
 
 
 
