@@ -35,24 +35,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeBtn = document.querySelector('.close-popup');
     const signupBtn = document.getElementById('signup-btn');
 
-    // Show the popup when "Sign Up Now" is clicked
     signupBtn.addEventListener('click', () => {
         popup.style.display = 'flex';
     });
 
-    // Close the popup
     closeBtn.addEventListener('click', () => {
         popup.style.display = 'none';
     });
 
-    // Close the popup if user clicks outside of it
     window.onclick = function(event) {
         if (event.target === popup) {
             popup.style.display = 'none';
         }
     };
 
-    // Handle form submission
     document.getElementById('signup-form').addEventListener('submit', (e) => {
         e.preventDefault();
         alert('Thank you for signing up! Someone will contact you in the next 48 hours.');
@@ -94,20 +90,6 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("total-cost").textContent = 
         `Total Cost for ${duration} months: £${totalCost}`;
     });
-
-    document.getElementById("signup-btn").onclick = function(){
-        document.getElementById("signup-modal").style.display = "block";
-    };
-
-    document.querySelector(".close").onclick = function() {
-        document.getElementById("signup-modal").style.display = "none";
-    };
-
-    window.onclick = function(event) {
-        if (event.target === document.getElementById("signup-modal")) {
-        document.getElementById("signup-modal").style.display = "none";
-        }
-    };
 
 document.getElementById('contact-form').addEventListener('submit', function (event) {
         event.preventDefault(); 
