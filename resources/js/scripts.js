@@ -110,27 +110,4 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
         });
 });
 
-document.getElementById('contact-form').addEventListener('submit', function (event) {
-        event.preventDefault(); 
 
-        // Submit the form using fetch
-        fetch(this.action, {
-            method: this.method,
-            body: new FormData(this),
-        }).then(() => {
-            // Show the popup
-            document.getElementById('thank-you-popup').style.display = 'block';
-
-            // Optionally redirect after showing the popup
-            setTimeout(() => {
-                window.location.href = "https://alexis93uk.github.io/project2/index.html";
-            }, 3000); // Redirect after 3 seconds
-        }).catch(error => {
-            console.error('Error:', error);
-        });
-    });
-
-
-    document.getElementById('close-popup').addEventListener('click', function () {
-        document.getElementById('thank-you-popup').style.display = 'none';
-    });
