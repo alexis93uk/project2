@@ -59,7 +59,38 @@
             <p>Choose the plan that works best for you.</p>
             <img src="resources/images/memberships.jpg" alt="fitness-studio" class="section-img">
             <button id="signup-btn">Sign Up Now</button>
+
+            <div id="signup-popup" class="popup">
+                <div class="popup-content">
+                    <span class="close-popup">&times;</span>
+                    <h2>Sign Up for Membership</h2>
+                    <form id="signup-form">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" required>
+
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+
+                        <label for="membership">Interested Membership:</label>
+                        <select id="membership" name="membership" required>
+                            <option value="Basic">Basic</option>
+                            <option value="Premium">Premium</option>
+                            <option value="VIP">VIP</option>
+                        </select>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                    <p>Someone will contact you in the next 48 hours to discuss further registration.</p>
+                </div>
+            </div>     
         </section>
+        
         <section>
             <h2>About Us</h2>
             <p>Learn more about our trainers and our philosophy!</p>
