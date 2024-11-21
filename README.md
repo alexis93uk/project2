@@ -85,6 +85,11 @@ Verify adaptive behavior for different viewports.
 
 ![image](https://github.com/user-attachments/assets/851224d0-0ba7-4f05-9ede-0af232219129)
 
+### contact.html validator results: 
+
+![image](https://github.com/user-attachments/assets/e78ad0b7-920b-41b2-932c-92a1460bf7f2)
+
+
 
 
 
