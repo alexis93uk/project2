@@ -30,6 +30,37 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const popup = document.getElementById('signup-popup');
+    const closeBtn = document.querySelector('.close-popup');
+    const signupBtn = document.getElementById('signup-btn');
+
+    // Show the popup when "Sign Up Now" is clicked
+    signupBtn.addEventListener('click', () => {
+        popup.style.display = 'flex';
+    });
+
+    // Close the popup
+    closeBtn.addEventListener('click', () => {
+        popup.style.display = 'none';
+    });
+
+    // Close the popup if user clicks outside of it
+    window.onclick = function(event) {
+        if (event.target === popup) {
+            popup.style.display = 'none';
+        }
+    };
+
+    // Handle form submission
+    document.getElementById('signup-form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('Thank you for signing up! Someone will contact you in the next 48 hours.');
+        popup.style.display = 'none';
+        e.target.reset();
+    });
+});
+
 //global variable to hold selected plan and price
 
 document.addEventListener("DOMContentLoaded", function() {
