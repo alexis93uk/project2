@@ -23,31 +23,28 @@ The home page opens smoothly without any issues, loading all the text and images
 ![image](https://github.com/user-attachments/assets/54986e8d-b005-4cdb-ad1f-d4d01bba1bb1)
 
 The membership page operates at the same speed, however, when click on membership type you need to scroll down to check and calculate the membership cost.
-The about Us web page is quite simple with some information about the owner and gym itself. 
-The contact page is another form where users can send send certain question before they decide to sign up for any memberships. 
+![image](https://github.com/user-attachments/assets/13b14196-1162-4e39-8759-80c7b90294b8)
+
+The About Us web page is quite simple with some information about the owner and gym itself. 
+The contact page is another form where users can send certain questions before they decide to sign up for any memberships. 
+![image](https://github.com/user-attachments/assets/495d5db9-e81b-47fe-bd20-0b9285d2cc92)
 
 ### Forms:
-Validate required fields by submitting without inputs.
-Test form submissions with valid and invalid data.
-Check for user feedback messages after form submission.
+all validated, and the user will automatically see the message when to form has been sent. 
 
 ### Dynamic Elements:
-Test buttons like "Select Plan" or "Calculate Total Cost" for expected behavior.
-
-### Error Handling:
-Simulate errors like incorrect inputs in forms to confirm proper handling.
+I tested buttons like "Select Plan" or "Calculate Total Cost" for expected behaviour and no issues have been found. 
 
 ## 2. Usability Testing
 ### Design:
-Assess the readability and clarity of content.
-Check for consistent fonts, spacing, and alignment.
-Ease of Navigation:
-Confirm intuitive menu placement and navigation flow.
-Test hover effects and active link highlights for user clarity.
+The readability and contrast of the website is smooth and straightforward. No hidden parts/messages, where the user would have to wonder what to do next. 
+Fonts, spacing and alignments are consistent with no huge differences between each page of the website. 
+### Ease of Navigation:
+Everything works smoothly, and it's easy to navigate through the website and the layout. 
 
 ## 3. Responsiveness Testing
 ### Screen Sizes:
-I Tested layout and elements on various screen sizes (desktop, tablet, and mobile).
+I Tested the layout and elements on various screen sizes (desktop, tablet, and mobile).
 images, text, and sections adapt correctly.
 ### Browser Compatibility:
 I also tested the website on popular browsers (Chrome, Firefox, Safari, Edge).
@@ -56,8 +53,10 @@ I also tested the website on popular browsers (Chrome, Firefox, Safari, Edge).
 
 ## 1. Tools
 Validators:
+
 HTML Validator (W3C Validator).
 - all checked and without issues
+  
 CSS Validator (W3C CSS Validation).
 - all checked and without issues. 
 
@@ -67,7 +66,7 @@ CSS Validator (W3C CSS Validation).
 colour contrast and text size are proportionate, with the combination of darker colours and whites in some parts. 
 
 ### Performance:
-Analyze load times and optimize heavy assets like images.
+I Analyzed load time and it takes up to 2,3 seconds to fully open each page of the website. 
 
 #### Responsive Design:
 Both desktop & mobile website versions are up to date, and users can easily navigate through without experiencing any issues. 
